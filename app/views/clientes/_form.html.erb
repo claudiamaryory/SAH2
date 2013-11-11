@@ -14,22 +14,19 @@
       </div>
     </div>
     <br><br>
-    <div class ="control-group">
+    <div class ="control-group" id="barriosDiv">
       
       <div class="controls"  >
-        <div id="barriosDiv">
-         <%= f.label :barrio %>
+       
           <%= render :partial => 'barrios', :object => @barrios%>
-        </div>
       </div>
     </div>
-    <%= f.input :telefono, :label => "Telefono",  :required => true %>
-    <%= f.input :celular, :label => "Celular",  :required => true %>
-    <%= f.input :email, :label => "Email",  :required => true %>
-      <div class="form-actions">
-        <%= f.submit "guardar", :class => 'btn btn-primary' %>
-
-      </div>
+        <%= f.input :telefono, :label => "Telefono",  :required => true %>
+        <%= f.input :celular, :label => "Celular",  :required => true %>
+        <%= f.input :email, :label => "Email",  :required => true %>
+          <div class="form-actions">
+            <%= f.submit "guardar", :class => 'btn btn-primary' %>
+          </div>
   </div>
 <% end %>
 

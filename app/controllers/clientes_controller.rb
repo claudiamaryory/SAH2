@@ -1,6 +1,6 @@
 
 class ClientesController < ApplicationController
-    
+    load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
   autocomplete :barrio, :nombre, :full => true
 
 def index#codigo de buscador

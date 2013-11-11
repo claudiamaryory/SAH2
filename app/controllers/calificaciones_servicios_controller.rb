@@ -1,5 +1,5 @@
 class CalificacionesServiciosController < ApplicationController
- 
+ load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
   def index
     @nrp = (params[:registro] != nil)? params[:registro].to_i : 3 # seleccionar el numero de registros
 

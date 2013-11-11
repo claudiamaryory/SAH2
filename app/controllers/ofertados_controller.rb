@@ -1,5 +1,5 @@
 class OfertadosController < ApplicationController
-  
+  load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
   def index#codigo de buscador
     @nrp = (params[:registro] != nil)? params[:registro].to_i : 2 # seleccionar el numero de registros
 

@@ -1,5 +1,5 @@
 class EstadosController < ApplicationController
- 
+ load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
   def index
     @estados = Estado.all
 

@@ -5,7 +5,7 @@
 
   <%= f.error_notification %>
   <div class="responsive">
-      <div class="modal-body">
+      
        <!--<div class="control-group"> -->
           <%= f.input :direccion, :label => "Direccion",  :required => true %>
           <div  id="camp">
@@ -18,8 +18,8 @@
           <%= f.label :interesado %>
           <%= f.collection_select :ofertado_id, Ofertado.all, :id,:nombre, :order => 'nombre', :required => true %><br><br>
 
-          <%= f.input :observaciones, :label => "Observaciones",  :required => true %>
-          
+          <%= f.label :observaciones %><br><!--cambiar la el tamaño del cuadro de observacion-->
+         <%= f.text_area(:observaciones, :rows => 5 )%>
           <div class="form-actions">
             <%= f.submit "guardar", :class => 'btn btn-primary' %>
             <%= link_to 'Atras', cliente_solicitudes_servicios_path(@cliente), :class => 'btn btn-small' %>

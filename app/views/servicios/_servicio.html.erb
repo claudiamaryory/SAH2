@@ -14,12 +14,12 @@
         :data => { :confirm => 'Esta Seguro?' },
         :method => :delete, :remote => true, :class => 'btn btn-dang'  %>
 
-    <%= if servicio.estado.nombre == "reprogramado" then #link que me lleve el formulario de reprogramacion
+    <%= if servicio.estado.nombre == "Reprogramado" then #link que me lleve el formulario de reprogramacion
        link_to 'Reprogramar', new_reprogramacion_path, :remote => true,
       :class => 'btn btn-dang' 
     end %>
 
- <% if servicio.estado.nombre != "terminado" then # link que me cambia el estado de la solicitud cuando ya se a terminado el servicio prestado %> 
+ <% if servicio.estado.nombre != "Terminado" then # link que me cambia el estado de la solicitud cuando ya se a terminado el servicio prestado %> 
  
     <%= link_to "Terminar Servicio", estado_orden_path(:solicitud_servicio_id => @solicitud_servicio, :id => servicio), :class => "btn btn-info" %>  
   <% end %>

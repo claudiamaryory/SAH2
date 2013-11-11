@@ -1,1 +1,6 @@
-<%= collection_select(:cliente, :barrio_id, @barrios = Barrio.where('municipio_id = ?', params[:municipio_id]), :id, :nombre, :prompt => 'Seleccione Barrio') %>
+<div class = "control-group"  id="barriosDiv">
+	<label class="control-label" for="inputName">Barrio</label>
+	<div class="controls">
+		<%= collection_select(:cliente, :barrio_id, @barrios = Barrio.where('municipio_id = ?', params[:municipio_id]), :id, :nombre, :prompt => 'Seleccione Barrio') %>
+	</div>
+</div>

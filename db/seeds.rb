@@ -3,43 +3,52 @@
 # Do not hesitate to tweak this to your needs
 
 Barrio.create([
-  { :nombre => "margaritas", :municipio_id => 1, :created_at => "2013-07-31 16:12:12", :updated_at => "2013-07-31 16:12:12" },
-  { :nombre => "magnolia", :municipio_id => 2, :created_at => "2013-07-31 16:12:35", :updated_at => "2013-07-31 16:12:35" }
+  { :nombre => "Las Orquideas", :municipio_id => 1, :created_at => "2013-11-04 22:44:51", :updated_at => "2013-11-04 22:45:01" },
+  { :nombre => "La Magnolia", :municipio_id => 1, :created_at => "2013-11-04 22:45:13", :updated_at => "2013-11-04 22:45:13" },
+  { :nombre => "El Triana", :municipio_id => 2, :created_at => "2013-11-04 22:45:29", :updated_at => "2013-11-04 22:45:29" },
+  { :nombre => "San Gabriel", :municipio_id => 2, :created_at => "2013-11-04 22:45:40", :updated_at => "2013-11-04 22:45:40" },
+  { :nombre => "La Doctora", :municipio_id => 3, :created_at => "2013-11-04 22:53:05", :updated_at => "2013-11-04 22:53:05" }
 ], :without_protection => true )
 
+
 Estado.create([
-  { :nombre => "en espera", :created_at => "2013-07-23 16:43:39", :updated_at => "2013-07-23 16:43:39" },
-  { :nombre => "reprogramado", :created_at => "2013-07-23 16:44:26", :updated_at => "2013-07-23 16:44:26" },
-  { :nombre => "terminado", :created_at => "2013-07-29 16:08:31", :updated_at => "2013-07-29 16:08:31" }
+  { :nombre => "Espera", :created_at => "2013-11-04 22:52:20", :updated_at => "2013-11-04 22:52:20" },
+  { :nombre => "Reprogramado", :created_at => "2013-11-04 22:52:28", :updated_at => "2013-11-04 22:52:28" },
+  { :nombre => "Terminado", :created_at => "2013-11-04 22:52:33", :updated_at => "2013-11-04 22:52:33" }
 ], :without_protection => true )
 
 
 
 Municipio.create([
-  { :nombre => "itagui", :created_at => "2013-07-31 14:04:00", :updated_at => "2013-07-31 14:04:00" },
-  { :nombre => "envigado", :created_at => "2013-07-31 14:04:32", :updated_at => "2013-07-31 14:04:32" }
+  { :nombre => "Envigado", :created_at => "2013-11-04 22:44:36", :updated_at => "2013-11-04 22:44:36" },
+  { :nombre => "Itagui", :created_at => "2013-11-04 22:44:43", :updated_at => "2013-11-04 22:44:43" },
+  { :nombre => "Sabaneta", :created_at => "2013-11-04 22:52:56", :updated_at => "2013-11-04 22:52:56" }
 ], :without_protection => true )
 
 
 
 Ofertado.create([
-  { :nombre => "instalacion de gimnasio", :created_at => "2013-07-23 16:42:33", :updated_at => "2013-07-25 16:27:46" },
-  { :nombre => "instalacion de cocina integral", :created_at => "2013-07-23 16:42:28", :updated_at => "2013-07-29 16:19:41" },
-  { :nombre => "instalacion articulos en madera", :created_at => "2013-07-29 16:20:56", :updated_at => "2013-07-29 16:21:04" }
+  { :nombre => "MUEBLES PARA OFICINAS", :created_at => "2013-11-04 22:50:15", :updated_at => "2013-11-04 22:50:15" },
+  { :nombre => "PERSIANAS Y CORTINA", :created_at => "2013-11-04 22:50:28", :updated_at => "2013-11-04 22:50:28" },
+  { :nombre => "CENTROS DE ENTRETENIMIENTOS", :created_at => "2013-11-04 22:50:42", :updated_at => "2013-11-04 22:50:42" },
+  { :nombre => "MÓDULOS DE BIBLIOTECA", :created_at => "2013-11-04 22:50:58", :updated_at => "2013-11-04 22:50:58" },
+  { :nombre => "INSTALACIÓN DE COCINAS", :created_at => "2013-11-04 22:51:17", :updated_at => "2013-11-04 22:51:17" },
+  { :nombre => "SOPORTE TV LCD", :created_at => "2013-11-04 22:51:31", :updated_at => "2013-11-04 22:51:31" },
+  { :nombre => "CLOSET'S", :created_at => "2013-11-04 22:51:45", :updated_at => "2013-11-04 22:51:45" },
+  { :nombre => "INSTALACION CABINAS DE BAÑOS", :created_at => "2013-11-04 22:51:57", :updated_at => "2013-11-04 22:51:57" }
 ], :without_protection => true )
 
-
 TipoCalificacion.create([
-  { :nombre => "buena", :created_at => "2013-07-23 16:42:42", :updated_at => "2013-07-23 16:42:42" },
-  { :nombre => "mala", :created_at => "2013-07-23 16:42:47", :updated_at => "2013-07-23 16:42:47" },
-  { :nombre => "excelente", :created_at => "2013-07-29 16:44:07", :updated_at => "2013-07-29 16:44:07" }
+  { :nombre => "Buena", :created_at => "2013-11-04 22:48:55", :updated_at => "2013-11-04 22:48:55" },
+  { :nombre => "Excelente", :created_at => "2013-11-04 22:48:48", :updated_at => "2013-11-04 22:49:05" },
+  { :nombre => "Regular", :created_at => "2013-11-04 22:49:11", :updated_at => "2013-11-04 22:49:11" },
+  { :nombre => "Mala", :created_at => "2013-11-04 22:49:20", :updated_at => "2013-11-04 22:49:20" }
 ], :without_protection => true )
 
 
 
 User.create([
-  
-  { :username => "claudia", :email => "claudiamaryory@misena.edu.co", :password => "123", :salt => nil, :created_at => "2013-08-23 16:26:10", :updated_at => "2013-08-23 16:26:10", :remember_me_token => nil, :remember_me_token_expires_at => nil, :reset_password_token => nil, :reset_password_token_expires_at => nil, :reset_password_email_sent_at => nil }
-])
+  { :username => "claudia", :email => "claudiamaryory@misena.edu.co", :crypted_password => "$2a$10$CSElLaJywbCTyhLC0rYSS.RHLPKA5rTquBzYVRiLz4I1wI/GRZqai", :salt => "pYSXBPGgxxv51qgjyHbw", :created_at => "2013-11-04 22:37:29", :updated_at => "2013-11-04 22:37:29", :remember_me_token => nil, :remember_me_token_expires_at => nil, :reset_password_token => nil, :reset_password_token_expires_at => nil, :reset_password_email_sent_at => nil }
+], :without_protection => true )
 
 

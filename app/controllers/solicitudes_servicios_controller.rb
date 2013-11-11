@@ -1,5 +1,5 @@
 class SolicitudesServiciosController < ApplicationController
-
+load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
   before_filter :find_cliente_and_solicitud_servicio # filtro para detalle amestro
   
   def index

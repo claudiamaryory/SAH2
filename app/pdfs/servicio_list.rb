@@ -28,7 +28,7 @@ class ServicioList < Prawn::Document
 
     #Método para definir el logo con su ubicación así como el título del reporte  
     def logo
-      logopath =  "#{Rails.root}/app/assets/images/logo.png"
+      logopath = "#{Rails.root}/app/assets/images/logo.png"
       image logopath, :width => 200, :height => 100
       move_down 10
       draw_text "Listado de Servicios", :at => [150, 575], size: 22
@@ -42,14 +42,14 @@ class ServicioList < Prawn::Document
 
     #Método para almacenar y mostrar los registros del detalle de la servicio
     def servicio_item_rows
-      [["Fecha", "Hora", "empleado", "solicitud_servicio", "cliente", "estado"]] +
+      [["Fecha", "Hora", "empleado", "solicitud de servicio", "cliente", "estado"]] +
       @servicios.map do |servicio|
         [ "#{servicio.fecha} ",  
         "#{servicio.hora} ",  
-        "#{servicio.empleado} ",
-        "#{servicio.solicitud_servicio_id} ",
-        "#{servicio.cliente} ",
-        "#{servicio.estado} ",
+        "#{servicio.empleado.nombre}  #{servicio.empleado.apellido} ",
+        "#{servicio.solicitud_servicio.ofertado.nombre} ",
+        "#{servicio.cliente.nombre}  #{servicio.cliente.apellido} ",
+        "#{servicio.estado.nombre} ",
          ]
       end
     end
@@ -57,11 +57,11 @@ class ServicioList < Prawn::Document
     #Método que imprime la tabla de las servicioes que hay
     def servicio_details
       move_down 80
-      table servicio_item_rows, :width => 700 do
+      table servicio_item_rows, :width => 540 do
         row(0).font_style = :bold
         columns(1..6).align = :right
         self.header = true
-        self.column_widths = {0 => 200, 1 => 100, 2 => 100, 3 => 100, 4 => 100, 5 => 100}
+        self.column_widths = {0 => 90, 1 => 90, 2 => 90, 3 => 90, 4 => 90, 5 => 90}
       end
     end
 

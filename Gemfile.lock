@@ -37,6 +37,7 @@ GEM
     bootstrap-will_paginate (0.0.9)
       will_paginate
     builder (3.0.4)
+    cancan (1.6.10)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.1)
@@ -131,6 +132,7 @@ GEM
       json (~> 1.4)
     ref (1.0.4)
     remotipart (1.0.5)
+    rolify (3.2.0)
     ruby-rc4 (0.1.5)
     sass (3.2.9)
     sass-rails (3.2.6)
@@ -176,6 +178,7 @@ DEPENDENCIES
   bcrypt-ruby
   bootstrap-datepicker-rails
   bootstrap-will_paginate
+  cancan
   coffee-rails (~> 3.2.1)
   jquery-rails
   json
@@ -187,6 +190,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rails3-jquery-autocomplete
   remotipart
+  rolify
   sass-rails (~> 3.2.3)
   seed_dump
   simple_form

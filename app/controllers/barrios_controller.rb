@@ -1,5 +1,6 @@
 class BarriosController < ApplicationController
-
+  load_and_authorize_resource :only => [:new, :edit, :destroy] #codigo de permiso de usuario adm
+   
    before_filter :find_municipio_and_barrio
 
  def index#codigo de buscador
