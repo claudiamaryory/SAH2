@@ -20,7 +20,7 @@ class Ability
            elsif user.has_role? :cliente
             can :show, :all
             else
-         can :show, :all
+         can :manage, :all
         end
     end
 end
